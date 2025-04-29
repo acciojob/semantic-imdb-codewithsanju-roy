@@ -1,2 +1,147 @@
 
 /* Your CSS Code here. */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #b11313; 
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: #0f1621; 
+    padding: 1rem 0;
+	margin:2px;
+	border-radius:20px
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #b11313;
+    color: #ffd700; /* Gold */
+}
+
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #b11313;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+}
+
+
+aside {
+    background-color: #0f1621;
+    color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+aside h4 {
+    color: #ffd700;
+    margin-top: 0;
+}
+
+aside ul {
+    padding-left: 1.5rem;
+}
+
+
+footer {
+    background-color: #0f1621;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer h3 {
+    color: #ffd700;
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    section, aside {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+#nav-actor, #nav-quote {
+    transition: transform 0.3s ease;
+}
+
+#nav-actor:hover, #nav-quote:hover {
+    transform: translateY(-5px);
+}
+
+
+#box-office li strong {
+    color: #ffd700;
+}
